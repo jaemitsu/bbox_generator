@@ -145,7 +145,7 @@ def saveJson(jsonPath, newJsonPath, breed_count, age_count, species_count, regio
 
     with open(newJsonPath + ".json", "w", encoding="UTF-8") as outfile: #json을 열어
         outfile.write(json.dumps(metaData, indent=3, ensure_ascii=False))
-        #python 객체를 json 파일로 변환 indent=2는 계층을 설정 보기좋게 정리 한글이 깨질 수 있습니다. 이러한 경우, "ensure_ascii = False"를 추가 
+        #python 객체를 json 파일로 변환 indent=2는 계층을 설정 보기좋게 정리, 한글깨짐의 경우, "ensure_ascii = False"를 추가 
 
     return breed_count, age_count, species_count, region_count
 
